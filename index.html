@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
+        --color-titleSection:#64748B;
         --color-body:#08080C;
         --color-logo:#00F0FF;
         --color-links:#94A3B8;
@@ -45,6 +46,7 @@
         </nav>
     </header>
     <main>
+        <!-- section du hero-->
         <section class="w-full h-auto flex flex-col pl-[50px] py-[70px] gap-[50px] md:flex-row md:gap-[30px] md:pr-[20px] md:pl-[30px]">
             <div class="flex flex-col gap-[20px] md:gap-[35px]">
                 <div class="flex items-center justify-center gap-[15px] w-[195px] h-[30px] border-[1px] border-title1 bg-title1/13 rounded-[22px]">
@@ -62,6 +64,37 @@
             <div class="w-[560px] h-[333px] rounded-[12px] border-[1px] border-borderButton bg-[url(./Assets/images/Hero-Right.png)] bg-cover bg-center md:w-full md:h-[400px]"></div>
 
         </section>
+
+        <!-- section about-->
+        <section class=" flex flex-col pl-[50px] pr-[15px] gap-[45px]">
+            <div>
+                <h2 class="font-Geist-Mono text-[13px] font-normal text-fontion">// 01 <span class="text-titleSection ">Background & Persona</span></h2>
+            </div>
+            <div class=" flex flex-col gap-[35px]">
+                <div><p class="font-bold font-Geist text-[28px] text-name">Pragmatic engineer turning coffee into production-ready architecture.</p></div>
+                <div><p class="font-Geist font-normal text-[16px] text-links">I specialize in the Node.js and React ecosystem, building scalable backend services and responsive client apps. I believe in clean code, automated testing, and robust deployment pipelines.</p></div>
+                <div class="flex w-full h-[115px]  gap-[15px] ">
+
+                    <div class=" bg-navBar flex flex-col w-[200px] h-[115px] border-[1px] border-borderButton justify-center pl-[20px]">
+                        <p class="font-Geist-Mono font-bold text-[32px] text-fonction">5+</p>
+                        <p class="text-titleSection font-Geist font-normal text-[13px]">Years Experience</p>
+                    </div>
+
+                    <div class=" bg-navBar flex flex-col w-[200px] h-[115px] border-[1px] border-borderButton justify-center pl-[20px]">
+                        <p class="font-Geist-Mono font-bold text-[32px] text-fonction">50+</p>
+                        <p class="text-titleSection font-Geist font-normal text-[13px]">Projects Completed</p>
+                    </div>
+
+                    <div class=" bg-navBar flex flex-col w-[200px] h-[115px] border-[1px] border-borderButton justify-center pl-[20px]">
+                        <p class="font-Geist-Mono font-bold text-[32px] text-fonction">10+</p>
+                        <p class="text-titleSection font-Geist font-normal text-[13px]">OS Contributions</p>
+                    </div>
+                </div>
+                <div><img src="./Assets/images/ordinateur.png"></div>
+                <div class="w-full h-[188px] border-[1px] rounded-[8px] border-borderButton bg-[url(./Assets/images/JSON-Terminal.png)] bg-cover bg-center"></div>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>
