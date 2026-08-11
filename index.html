@@ -6,30 +6,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-body:#08080C;
         --color-logo:#00F0FF;
         --color-links:#94A3B8;
+        --color-button:#F8FAFC;
+        --color-navBar:#121216;
         --font-Geist: "Geist", sans-serif;
         --font-Geist-Mono:"Geist Mono", monospace;
+        --color-borderButton:#282830;
 
       }
     </style>
     <title>portfolio fullstack js</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div><h1>$ alex.dev</h1></div>
-            <div>
+    <header class="w-full h-[90px]">
+        <nav class="w-full h-full bg-navBar flex justify-between items-center px-[50px]">
+            <div><h1 class="text-logo font-bold text-[16px] font-Geist-Mono">$ alex.dev</h1></div>
+            <div class="hidden md:flex md:font-normal md:font-Geist-Mono md:text-links md:gap-[30px] md:text-[14px] justify-center items-center">
                 <a href="#">_/about</a>
                 <a href="#">_/skills</a>
                 <a href="#">_/projects</a>
                 <a href="#">_/timeline</a>
                 <a href="#">_/journal</a>
-                <button>Hire Me</button>
+                <button class="font-Geist w-[100px] h-[42px] text-button border-1 border-borderButton font-semibold text-[14px]">Hire Me</button>
+            </div>
+            <div class="md:hidden">
+                <ion-icon name="grid" class="text-logo text-[16px]"></ion-icon>
             </div>
         </nav>
     </header>
