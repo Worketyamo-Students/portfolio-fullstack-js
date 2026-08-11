@@ -16,7 +16,10 @@
         --color-links:#94A3B8;
         --color-button:#F8FAFC;
         --color-navBar:#121216;
+        --color-title1:#39FF14;
         --font-Geist: "Geist", sans-serif;
+        --color-name:#F8FAFC;
+        --color-fonction:#00F0FF;
         --font-Geist-Mono:"Geist Mono", monospace;
         --color-borderButton:#282830;
 
@@ -24,8 +27,8 @@
     </style>
     <title>portfolio fullstack js</title>
 </head>
-<body>
-    <header class="w-full h-[90px]">
+<body class="bg-body">
+    <header class="w-full h-[90px] border-1 border-borderButton">
         <nav class="w-full h-full bg-navBar flex justify-between items-center px-[50px]">
             <div><h1 class="text-logo font-bold text-[16px] font-Geist-Mono">$ alex.dev</h1></div>
             <div class="hidden md:flex md:font-normal md:font-Geist-Mono md:text-links md:gap-[30px] md:text-[14px] justify-center items-center">
@@ -41,5 +44,24 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="w-full h-auto flex flex-col pl-[50px] pt-[70px]">
+            <div class="flex flex-col gap-[20px]">
+                <div class="flex items-center justify-center gap-[15px] w-[195px] h-[30px] border-[1px] border-title1 bg-title1/13 rounded-[22px]">
+                    <img class="w-[10px] h-[10px]" src="./Assets/images/pulse-dot.png">
+                    <h2 class="font-Geist-Mono font-semibold text-[13px] uppercase text-title1">Available for Hire</h2>
+                </div>
+                <div><h2 class="font-Geist font-extrabold text-[56px] text-name">Alex Durand</h2></div>
+                <div><p class="font-Geist-Mono font-medium text-[22px] text-fonction"> > Fullstack JS Developer</p></div>
+                <div><p class="font-Geist font-normal text-[18px] text-links">Building resilient, high-performance web applications. Focused on Node.js architecture, secure React microfrontends, and modern developer tooling.</p></div>
+                <div class="flex gap-[30px]">
+                    <button class="font-semibold font-semibold text-[14px] w-[163px] h-[42px] rounded-[6px] bg-fonction bg-[url(./Assets/images/arrow-right.png)] bg-no-repeat bg-[14px_14px] bg-[135px_center] text-body ">View Projects </button>
+                    <button class="font-semibold font-semibold text-[14px] w-[163px] h-[42px] rounded-[6px] text-button border-[1px] border-borderButton">Contact Me</button>
+                </div>
+            </div>
+            <div class=""></div>
+
+        </section>
+    </main>
 </body>
 </html>
