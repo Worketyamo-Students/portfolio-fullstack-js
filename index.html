@@ -18,6 +18,7 @@
         --color-button:#F8FAFC;
         --color-navBar:#121216;
         --color-title1:#39FF14;
+        --color-navButton:#1A1A22;
         --font-Geist: "Geist", sans-serif;
         --color-name:#F8FAFC;
         --color-fonction:#00F0FF;
@@ -169,7 +170,7 @@
         </section>
 
         <!-- section section projects -->
-        <section class="flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton" >
+        <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton" >
             <div>
                 <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 03 <span class="text-titleSection ">Production Artifacts</span></h2>
             </div>
@@ -180,13 +181,48 @@
                 <div>
                     <p class="font-Geist font-normal text-[16px] text-links">Crafted for latency, architectural soundness, and clean layout patterns.</p>
                 </div>
-                <div class="flex flex-col w-full h-[414px] overflow-x-auto">
-                    <div class="flex flex-row w-full h-[220px]">
-                        <div class="flex  flex-shrink-0"><img src="./Assets/images/project1.png"></div>
-                        <div class="flex  flex-shrink-0"><img src="./Assets/images/project2.png"></div> 
-                        <div class="flex  flex-shrink-0"><img src="./Assets/images/project3.png"></div>  
+                <div class="flex flex-col w-full h-auto overflow-x-auto md:overflow-x-hidden">
+                    <div class="flex flex-row w-full h-[220px] gap-[30px]">
+                        <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project1.png"></div>
+                        <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project2.png"></div> 
+                        <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project3.png"></div>  
                     </div>
-                    <div class="flex flex-row w-full h-[200px]">
+                    <div class="flex flex-row w-full h-[194px] gap-[30px]">
+                        <div class="flex flex-col w-[410px] h-[194px] p-[18px] gap-[10px] border-[1px] border-borderButton flex-shrink-0 rounded-[6px]">
+                            <nav class="flex flex-row w-full gap-[10px]">
+                                <button class="w-[53px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">React</button>
+                                <button class="w-[86px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">TypeScript</button>
+                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Node.js</button>
+                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">MongoDB</button>
+                            </nav>
+                            <h2 class="font-bold font-Geist text-[20px] text-name">TaskFlow</h2>
+                            <p class="font-Geist text-[14px] text-links font-normal">Robust project management platform constructed on top of a highly responsive Kanban schema.</p>
+                            <div class="w-[120px] h-[16px] font-Geist font-semibold text-[12px] text-fonction bg-[url(./Assets/images/play-circle.png)] bg-no-repeat bg-[24px_24px] bg-[95px]">EXECUTE_VIEW</div>
+                        </div>
+
+                        <div class="flex flex-col w-[410px] h-[194px] p-[18px] gap-[10px] border-[1px] border-borderButton border-[1px] flex-shrink-0 rounded-[6px]">
+                            <nav class="flex flex-row w-full gap-[10px]">
+                                <button class="w-[53px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">React</button>
+                                <button class="w-[86px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">TypeScript</button>
+                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Node.js</button>
+                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">MongoDB</button>
+                            </nav>
+                            <h2 class="font-bold font-Geist text-[20px] text-name">TaskFlow</h2>
+                            <p class="font-Geist text-[14px] text-links font-normal">Robust project management platform constructed on top of a highly responsive Kanban schema.</p>
+                            <div class="w-[120px] h-[16px] font-Geist font-semibold text-[12px] text-fonction bg-[url(./Assets/images/play-circle.png)] bg-no-repeat bg-[24px_24px] bg-[95px]">EXECUTE_VIEW</div>
+                        </div>
+
+                        <div class="flex flex-col w-[410px] h-[194px] p-[18px] gap-[10px] border-[1px] border-borderButton flex-shrink-0 rounded-[6px]">
+                            <nav class="flex flex-row w-full gap-[10px]">
+                                <button class="w-[53px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">React</button>
+                                <button class="w-[86px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">TypeScript</button>
+                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Node.js</button>
+                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">MongoDB</button>
+                            </nav>
+                            <h2 class="font-bold font-Geist text-[20px] text-name">TaskFlow</h2>
+                            <p class="font-Geist text-[14px] text-links font-normal">Robust project management platform constructed on top of a highly responsive Kanban schema.</p>
+                            <div class="w-[120px] h-[16px] font-Geist font-semibold text-[12px] text-fonction bg-[url(./Assets/images/play-circle.png)] bg-no-repeat bg-[24px_24px] bg-[95px]">EXECUTE_VIEW</div>
+                        </div>
 
                     </div>
 
