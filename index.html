@@ -433,7 +433,7 @@
              <div>
                  <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 08 <span class="text-titleSection ">Initialize Connection</span></h2>
             </div>
-            <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col gap-[30px] md:flex-row">
                 <!-- deux enfants principaux -->
                  <!-- enfant 1 -->
                 <div class="flex flex-col gap-[30px]">
@@ -474,7 +474,33 @@
                 </div>
 
                  <!-- enfant 2 -->
-                 <div></div>
+                 <div class="flex flex-col w-full h-[475px] border-[1px] border-borderButton bg-navBar rounded-[12px]">
+                    <div class="flex flex-row w-full h-[60px] justify-between border-[1px] border-borderButton items-center px-[10px]">
+                        <img class="w-[40px] h-[10px]" src="./Assets/images/window-controls.png" alt="windows-controls">
+                        <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">POST /api/contact</span>
+                        <img class="w-[40px] h-[10px]" src="./Assets/images/right-spacer.png" alt="right-spacer">
+
+                    </div>
+                    <form class="flex flex-col w-full h-auto p-[20px] gap-[25px]">
+                        <div class="flex flex-col gap-[10px]">
+                            <label class="font-Geist-Mono font-normal text-[12px] text-commitsText" for="nom">"name"</label>
+                            <input class=" pl-[15px] w-full h-[45px] border-[1px] border-borderButton rounded-[6px] bg-navBar text-[14px] text-links font-Geist font-normal" type="text" id="nom" name="nom" placeholder="Alex Durand">
+                        </div>
+                        <div class="flex flex-col gap-[10px]">
+                            <label class="font-Geist-Mono font-normal text-[12px] text-commitsText"  for="email">"email"</label>
+                            <input class=" pl-[15px] w-full h-[45px] border-[1px] border-borderButton rounded-[6px] bg-navBar text-[14px] text-links font-Geist font-normal" type="email" id="email" name="email" placeholder="alex@durand.dev">
+                        </div>
+                        <div class="flex flex-col gap-[10px]">
+                            <label class="font-Geist-Mono font-normal text-[12px] text-commitsText"  for="message">"message"</label>
+                            <textarea class=" pl-[15px] w-full h-[100px] bg-navBar border-[1px] border-borderButton rounded-[6px] text-[14px] text-links font-Geist font-normal" name="message" id="message" placeholder="Hi Alex, let's discuss a modern fullstack setup..."></textarea>
+                        </div>
+                        <div class="flex flex-row justify-between items-center">
+                            <span class="font-Geist font-normal text-[11px] text-title1 ">Status: READY_TO_SEND</span>
+                            <input class="w-[165px] h-[42px] rounded-[6px] bg-fonction font-Geist font-semibold text-[14px] text-body bg-[url(./Assets/images/play-circle-col.png)] bg-no-repeat bg-[24px_24px] bg-[135px_center]" type="submit" value="Send Request">
+                        </div>
+                    </form>
+
+                </div>
 
             </div>
         </section>
