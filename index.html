@@ -1,510 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-titleSection:#64748B;
-        --color-body:#08080C;
-        --color-logo:#00F0FF;
-        --color-links:#94A3B8;
-        --color-button:#F8FAFC;
-        --color-navBar:#121216;
-        --color-title1:#39FF14;
-        --color-navButton:#1A1A22;
-        --font-Geist: "Geist", sans-serif;
-        --color-name:#F8FAFC;
-        --color-fonction:#00F0FF;
-        --font-Geist-Mono:"Geist Mono", monospace;
-        --color-borderButton:#282830;
-        --color-commitsText:#64748B;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss">
+        @theme {
+            --color-titleSection:#64748B;
+            --color-body:#08080C;
+            --color-logo:#00F0FF;
+            --color-links:#94A3B8;
+            --color-button:#F8FAFC;
+            --color-navBar:#121216;
+            --color-title1:#39FF14;
+            --color-navButton:#1A1A22;
+            --font-Geist: "Geist", sans-serif;
+            --color-name:#F8FAFC;
+            --color-fonction:#00F0FF;
+            --font-Geist-Mono:"Geist Mono", monospace;
+            --color-borderButton:#282830;
+            --color-commitsText:#64748B;
 
-      }
-    </style>
-    <title>portfolio fullstack js</title>
-</head>
-<body class="bg-body">
-    <header class="w-full h-[90px] border-1 border-borderButton">
-        <nav class="w-full h-full bg-navBar flex justify-between items-center px-[50px] md:px-[30px]">
-            <div><h1 class="text-logo font-bold text-[16px] font-Geist-Mono">$ alex.dev</h1></div>
-            <div class="hidden md:flex md:font-normal md:font-Geist-Mono md:text-links md:gap-[30px] md:text-[14px] justify-center items-center">
-                <a href="#">_/about</a>
-                <a href="#">_/skills</a>
-                <a href="#">_/projects</a>
-                <a href="#">_/timeline</a>
-                <a href="#">_/journal</a>
-                <button class="font-Geist w-[100px] h-[42px] text-button border-1 border-borderButton font-semibold text-[14px]">Hire Me</button>
-            </div>
-            <div class="md:hidden">
-                <ion-icon name="grid" class="text-logo text-[16px]"></ion-icon>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- section du hero-->
-        <section class="w-full h-auto flex flex-col pl-[50px] py-[70px] gap-[50px] md:flex-row md:gap-[30px] md:pr-[20px] md:pl-[30px] border-[1px] border-borderButton ">
-            <div class="flex flex-col gap-[20px] md:gap-[35px]">
-                <div class="flex items-center justify-center gap-[15px] w-[195px] h-[30px] border-[1px] border-title1 bg-title1/13 rounded-[22px]">
-                    <img class="w-[10px] h-[10px]" src="./Assets/images/pulse-dot.png">
-                    <h2 class="font-Geist-Mono font-semibold text-[13px] uppercase text-title1">Available for Hire</h2>
+        }
+        </style>
+        <title>portfolio fullstack js</title>
+    </head>
+    <body class="bg-body">
+        <header class="w-full h-[90px] border-1 border-borderButton">
+            <nav class="w-full h-full bg-navBar flex justify-between items-center px-[50px] md:px-[30px]">
+                <div><h1 class="text-logo font-bold text-[16px] font-Geist-Mono">$ alex.dev</h1></div>
+                <div class="hidden md:flex md:font-normal md:font-Geist-Mono md:text-links md:gap-[30px] md:text-[14px] justify-center items-center">
+                    <a href="#">_/about</a>
+                    <a href="#">_/skills</a>
+                    <a href="#">_/projects</a>
+                    <a href="#">_/timeline</a>
+                    <a href="#">_/journal</a>
+                    <button class="font-Geist w-[100px] h-[42px] text-button border-1 border-borderButton font-semibold text-[14px]">Hire Me</button>
                 </div>
-                <div><h2 class="font-Geist font-extrabold text-[56px] text-name">Alex Durand</h2></div>
-                <div><p class="font-Geist-Mono font-medium text-[22px] text-fonction"> > Fullstack JS Developer</p></div>
-                <div><p class="font-Geist font-normal text-[18px] text-links">Building resilient, high-performance web applications. Focused on Node.js architecture, secure React microfrontends, and modern developer tooling.</p></div>
-                <div class="flex gap-[30px]">
-                    <button class="font-semibold font-semibold text-[14px] w-[163px] h-[42px] rounded-[6px] bg-fonction bg-[url(./Assets/images/arrow-right.png)] bg-no-repeat bg-[14px_14px] bg-[135px_center] text-body ">View Projects </button>
-                    <button class="font-semibold font-semibold text-[14px] w-[163px] h-[42px] rounded-[6px] text-button border-[1px] border-borderButton">Contact Me</button>
+                <div class="md:hidden">
+                    <ion-icon name="grid" class="text-logo text-[16px]"></ion-icon>
                 </div>
-            </div>
-            <div class="w-[560px] h-[333px] rounded-[12px] border-[1px] border-borderButton bg-[url(./Assets/images/Hero-Right.png)] bg-cover bg-center md:w-full md:h-[400px]"></div>
-
-        </section>
-
-        <!-- section about-->
-        <section class="py-[70px] flex flex-col pl-[50px] pr-[15px] gap-[45px] md:pl-[30px] md:gap-[70px] border-[1px] border-borderButton ">
-            <div>
-                <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 01 <span class="text-titleSection ">Background & Persona</span></h2>
-            </div>
-            <div class="md:flex md:flex-row gap-[35px] flex flex-col">
-                <div class=" flex flex-col gap-[35px] md:gap-[55px]">
-                    <div><p class="font-bold font-Geist text-[28px] text-name">Pragmatic engineer turning coffee into production-ready architecture.</p></div>
-                    <div><p class="font-Geist font-normal text-[16px] text-links">I specialize in the Node.js and React ecosystem, building scalable backend services and responsive client apps. I believe in clean code, automated testing, and robust deployment pipelines.</p></div>
-                    <div class="flex w-full h-[115px]  gap-[15px] ">
-
-                        <div class=" rounded-[8px] bg-navBar flex flex-col w-[200px] h-[115px] border-[1px] border-borderButton justify-center pl-[20px]">
-                            <p class="font-Geist-Mono font-bold text-[32px] text-fonction">5+</p>
-                            <p class="text-titleSection font-Geist font-normal text-[13px]">Years Experience</p>
-                        </div>
-
-                        <div class=" rounded-[8px] bg-navBar flex flex-col w-[200px] h-[115px] border-[1px] border-borderButton justify-center pl-[20px]">
-                            <p class="font-Geist-Mono font-bold text-[32px] text-fonction">50+</p>
-                            <p class="text-titleSection font-Geist font-normal text-[13px]">Projects Completed</p>
-                        </div>
-
-                        <div class=" rounded-[8px] bg-navBar flex flex-col w-[200px] h-[115px] border-[1px] border-borderButton justify-center pl-[20px]">
-                            <p class="font-Geist-Mono font-bold text-[32px] text-fonction">10+</p>
-                            <p class="text-titleSection font-Geist font-normal text-[13px]">OS Contributions</p>
-                        </div>
+            </nav>
+        </header>
+        <main>
+            <!-- section du hero-->
+            <section class="w-full h-auto flex flex-col pl-[50px] py-[70px] gap-[50px] md:flex-row md:gap-[30px] md:pr-[20px] md:pl-[30px] border-[1px] border-borderButton ">
+                <div class="flex flex-col gap-[20px] md:gap-[35px]">
+                    <div class="flex items-center justify-center gap-[15px] w-[195px] h-[30px] border-[1px] border-title1 bg-title1/13 rounded-[22px]">
+                        <img class="w-[10px] h-[10px]" src="./Assets/images/pulse-dot.png">
+                        <h2 class="font-Geist-Mono font-semibold text-[13px] uppercase text-title1">Available for Hire</h2>
+                    </div>
+                    <div><h2 class="font-Geist font-extrabold text-[56px] text-name">Alex Durand</h2></div>
+                    <div><p class="font-Geist-Mono font-medium text-[22px] text-fonction"> > Fullstack JS Developer</p></div>
+                    <div><p class="font-Geist font-normal text-[18px] text-links">Building resilient, high-performance web applications. Focused on Node.js architecture, secure React microfrontends, and modern developer tooling.</p></div>
+                    <div class="flex gap-[30px]">
+                        <button class="font-semibold font-semibold text-[14px] w-[163px] h-[42px] rounded-[6px] bg-fonction bg-[url(./Assets/images/arrow-right.png)] bg-no-repeat bg-[14px_14px] bg-[135px_center] text-body ">View Projects </button>
+                        <button class="font-semibold font-semibold text-[14px] w-[163px] h-[42px] rounded-[6px] text-button border-[1px] border-borderButton">Contact Me</button>
                     </div>
                 </div>
-                <div class="flex flex-col gap-[35px]">
-                    <div><img class="rounded-[12px]" src="./Assets/images/ordinateur.png"></div>
-                    <div class="w-full h-[188px] md:h-[250px] border-[1px] rounded-[8px] border-borderButton bg-[url(./Assets/images/JSON-Terminal.png)] bg-cover bg-center"></div>
-                </div>
-            </div>
-        </section>
+                <div class="w-[560px] h-[333px] rounded-[12px] border-[1px] border-borderButton bg-[url(./Assets/images/Hero-Right.png)] bg-cover bg-center md:w-full md:h-[400px]"></div>
 
-        <!-- section techStack-->
+            </section>
 
-        <section class="flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
-            <div>
-                <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 02 <span class="text-titleSection ">Skill Matrix</span></h2>
-            </div>
-
-            <div  class="flex flex-col font-Geist gap-[35px]">
+            <!-- section about-->
+            <section class="py-[70px] flex flex-col pl-[50px] pr-[15px] gap-[45px] md:pl-[30px] md:gap-[70px] border-[1px] border-borderButton ">
                 <div>
-                    <p class="font-bold text-[28px] text-button">My Weaponry of Choice</p>
+                    <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 01 <span class="text-titleSection ">Background & Persona</span></h2>
                 </div>
+                <div class="md:flex md:flex-row gap-[35px] flex flex-col">
+                    <div class=" flex flex-col gap-[35px] md:gap-[55px]">
+                        <div><p class="font-bold font-Geist text-[28px] text-name">Pragmatic engineer turning coffee into production-ready architecture.</p></div>
+                        <div><p class="font-Geist font-normal text-[16px] text-links">I specialize in the Node.js and React ecosystem, building scalable backend services and responsive client apps. I believe in clean code, automated testing, and robust deployment pipelines.</p></div>
+                        <div class="flex w-full h-[115px]  gap-[15px] ">
+
+                            <div class=" rounded-[8px] bg-navBar flex flex-col w-[200px] h-[115px] border-[1px] border-borderButton justify-center pl-[20px]">
+                                <p class="font-Geist-Mono font-bold text-[32px] text-fonction">5+</p>
+                                <p class="text-titleSection font-Geist font-normal text-[13px]">Years Experience</p>
+                            </div>
+
+                            <div class=" rounded-[8px] bg-navBar flex flex-col w-[200px] h-[115px] border-[1px] border-borderButton justify-center pl-[20px]">
+                                <p class="font-Geist-Mono font-bold text-[32px] text-fonction">50+</p>
+                                <p class="text-titleSection font-Geist font-normal text-[13px]">Projects Completed</p>
+                            </div>
+
+                            <div class=" rounded-[8px] bg-navBar flex flex-col w-[200px] h-[115px] border-[1px] border-borderButton justify-center pl-[20px]">
+                                <p class="font-Geist-Mono font-bold text-[32px] text-fonction">10+</p>
+                                <p class="text-titleSection font-Geist font-normal text-[13px]">OS Contributions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[35px]">
+                        <div><img class="rounded-[12px]" src="./Assets/images/ordinateur.png"></div>
+                        <div class="w-full h-[188px] md:h-[250px] border-[1px] rounded-[8px] border-borderButton bg-[url(./Assets/images/JSON-Terminal.png)] bg-cover bg-center"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section techStack-->
+
+            <section class="flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
                 <div>
-                    <p class="font-Geist font-normal text-[16px] text-links" >Modern backend protocols, scalable databases, and state-of-the-art frontend patterns.</p>
-                </div>
-                <div class="flex flex-col w-full h-auto gap-[15px] font-Geist font-medium text-[14px] text-name overflow-x-auto md:overflow-x-hidden">
-                    <div class="flex flex-row w-full h-[64px] gap-[15px]">
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/file-code.png" alt="file code">
-                            <span>React</span>
-                        </div>
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/panel-bottom.png">
-                            <span>Next.js</span>
-                        </div>
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/curly-braces.png">
-                            <span>Node.js</span>
-                        </div>
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/code.png"">
-                            <span>Express</span>
-                        </div>
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/circle-x.png">
-                            <span>TypeScript</span>
-                        </div>
-                        
-                        
-                    </div>
-
-                    <div class="flex flex-row w-full h-[64px] gap-[15px]">
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/database.png" alt="file code">
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/database.png">
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/git-branch.png">
-                            <span>Docker</span>
-                        </div>
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/play-circle.png"">
-                            <span>AWS</span>
-                        </div>
-                        <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
-                            <img class="w-[18px] h-[18px]" src="./Assets/images/git-branch.png">
-                            <span>Git</span>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- section section projects -->
-        <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]" >
-            <div>
-                <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 03 <span class="text-titleSection ">Production Artifacts</span></h2>
-            </div>
-            <div class=" w-full h-auto flex flex-col font-Geist gap-[35px] ">
-                <div>
-                    <p class=" font-Geist font-bold text-[28px] text-button">Selected Deployments</p>
-                </div>
-                <div>
-                    <p class="font-Geist font-normal text-[16px] text-links">Crafted for latency, architectural soundness, and clean layout patterns.</p>
-                </div>
-                <div class="flex flex-col w-full h-auto overflow-x-auto md:overflow-x-hidden">
-                    <div class="flex flex-row w-full h-[220px] gap-[30px]">
-                        <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project1.png"></div>
-                        <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project2.png"></div> 
-                        <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project3.png"></div>  
-                    </div>
-                    <div class="flex flex-row w-full h-[194px] gap-[30px]">
-                        <div class="flex flex-col w-[410px] h-[194px] p-[18px] gap-[10px] flex-shrink-0 rounded-[6px] bg-navBar">
-                            <nav class="flex flex-row w-full gap-[10px]">
-                                <button class="w-[53px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">React</button>
-                                <button class="w-[86px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">TypeScript</button>
-                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Node.js</button>
-                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">MongoDB</button>
-                            </nav>
-                            <h2 class="font-bold font-Geist text-[20px] text-name">TaskFlow</h2>
-                            <p class="font-Geist text-[14px] text-links font-normal">Robust project management platform constructed on top of a highly responsive Kanban schema.</p>
-                            <div class="w-[120px] h-[16px] font-Geist font-semibold text-[12px] text-fonction bg-[url(./Assets/images/play-circle.png)] bg-no-repeat bg-[24px_24px] bg-[95px]">EXECUTE_VIEW</div>
-                        </div>
-
-                        <div class="flex flex-col w-[410px] h-[194px] p-[18px] gap-[10px] bg-navBar flex-shrink-0 rounded-[6px]">
-                            <nav class="flex flex-row w-full gap-[10px]">
-                                <button class="w-[53px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">React</button>
-                                <button class="w-[86px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">TypeScript</button>
-                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Node.js</button>
-                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">MongoDB</button>
-                            </nav>
-                            <h2 class="font-bold font-Geist text-[20px] text-name">TaskFlow</h2>
-                            <p class="font-Geist text-[14px] text-links font-normal">Robust project management platform constructed on top of a highly responsive Kanban schema.</p>
-                            <div class="w-[120px] h-[16px] font-Geist font-semibold text-[12px] text-fonction bg-[url(./Assets/images/play-circle.png)] bg-no-repeat bg-[24px_24px] bg-[95px]">EXECUTE_VIEW</div>
-                        </div>
-
-                        <div class="flex flex-col w-[410px] h-[194px] p-[18px] gap-[10px] bg-navBar flex-shrink-0 rounded-[6px]">
-                            <nav class="flex flex-row w-full gap-[10px]">
-                                <button class="w-[53px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">React</button>
-                                <button class="w-[86px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">TypeScript</button>
-                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Node.js</button>
-                                <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">MongoDB</button>
-                            </nav>
-                            <h2 class="font-bold font-Geist text-[20px] text-name">TaskFlow</h2>
-                            <p class="font-Geist text-[14px] text-links font-normal">Robust project management platform constructed on top of a highly responsive Kanban schema.</p>
-                            <div class="w-[120px] h-[16px] font-Geist font-semibold text-[12px] text-fonction bg-[url(./Assets/images/play-circle.png)] bg-no-repeat bg-[24px_24px] bg-[95px]">EXECUTE_VIEW</div>
-                        </div>
-
-                    </div>
-
+                    <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 02 <span class="text-titleSection ">Skill Matrix</span></h2>
                 </div>
 
-            </div>
-        </section>
-        <!-- system logs-->
-        <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[10px] md:pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
-            <div>
-                <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 04 <span class="text-titleSection ">System Logs</span></h2>
-            </div>
-            <div class="flex flex-col w-full h-auto gap-[10px]">
-                <div>
-                    <p class=" font-Geist font-bold text-[28px] text-button">Career Timeline</p>
-                </div>
-                <div>
-                    <p class="font-Geist font-normal text-[16px] text-links">A trajectory of technical depth, system operations, and growing product ownership.</p>
-                </div>
-            </div> 
-            <div class="flex flex-col w-full">
-                <!-- trois enfants -->
-                 <!-- enfant 1 -->
-                <div class="flex flex-col w-full items-center">
-                    <div class="flex flex-row items-center w-full justify-between">
-                        <div class="flex flex-row items-center gap-[20px]">
-                            <img class="w-[17px] h-[17px]" src="./Assets/images/Frame.png" alt="cercle">
-                            <h2 class=" font-Geist font-bold text-[18px] text-button">Senior Developer <span class="pl-[5px] text-links text-[14px] font-Geist-Mono font-normal">@ TechCorp</span></h2>
-                        </div>    
-                        <span class=" flex font-Geist-Mono text-links text-[13px] font-normal ">2022 – Present</span>
-                    </div>
-                    <div class="flex flex-row items-center gap-[31px]">
-                        <img class="pl-[8px]" src="./Assets/images/Line.png">
-                        <p class="font-Geist text-[14px] text-links font-normal">Lead a high-performance cross-functional engineering squad. Spearheaded migration from legacy monolithic structures to a modern serverless microservice pipeline on AWS, improving system up-time to 99.99%.</p>
-                    </div>
-                </div>
-                <!-- enfant 2 -->
-                <div class="flex flex-col w-full items-center">
-                    <div class="flex flex-row items-center w-full justify-between">
-                        <div class="flex flex-row items-center gap-[20px]">
-                            <img class="w-[17px] h-[17px]" src="./Assets/images/Frame.png" alt="cercle">
-                            <h2 class=" font-Geist font-bold text-[18px] text-button">Fullstack Developer <span class="pl-[5px] text-links text-[14px] font-Geist-Mono font-normal">@ StartupLab</span></h2>
-                        </div>    
-                        <span class=" flex font-Geist-Mono text-links text-[13px] font-normal ">2020 – 2022</span>
-                    </div>
-                    <div class="flex flex-row items-center gap-[31px] md:pr-[160px]">
-                        <img class="pl-[8px]" src="./Assets/images/Line.png">
-                        <p class="font-Geist text-[14px] text-links font-normal">Designed, tested, and shipped primary features for our B2B SaaS platform using React, TypeScript, and Node.js. Optimized SQL queries to reduce core analytics latency by 42%.</p>
-                    </div>
-                </div>
-                <!-- enfant 3 -->
-                 <div class="flex flex-col w-full items-center gap-[15px]">
-                    <div class="flex flex-row items-center w-full justify-between">
-                        <div class="flex flex-row items-center gap-[20px]">
-                            <img class="w-[17px] h-[17px]" src="./Assets/images/Frame.png" alt="cercle">
-                            <h2 class=" font-Geist font-bold text-[18px] text-button">Junior Developer <span class="pl-[5px] text-links text-[14px] font-Geist-Mono font-normal">@ WebAgency</span></h2>
-                        </div>    
-                        <span class=" flex font-Geist-Mono text-links text-[13px] font-normal ">2018 – 2020</span>
+                <div  class="flex flex-col font-Geist gap-[35px]">
+                    <div>
+                        <p class="font-bold text-[28px] text-button">My Weaponry of Choice</p>
                     </div>
                     <div>
-                        <p class=" pl-[37px] font-Geist text-[14px] text-links font-normal md:pr-[218px]">Constructed standard responsive layouts, implemented micro-CMS layers, and integrated secure payment processing with Stripe for multiple e-commerce entities.</p>
+                        <p class="font-Geist font-normal text-[16px] text-links" >Modern backend protocols, scalable databases, and state-of-the-art frontend patterns.</p>
                     </div>
-                </div>
-
-
-            </div>
-            
-            
-        </section>
-        <!-- section community sync -->
-        <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px] ">
-            <div>
-                 <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 05 <span class="text-titleSection ">Community Sync</span></h2>
-            </div>
-            <div class="md:flex-row md:gap[40px] flex flex-col gap-[30px]">
-
-                <div class="flex flex-col gap-[20px]">
-                    <div>
-                        <p class=" font-Geist font-bold text-[28px] text-button">Sharing with the Void</p>
-                    </div>
-                    <div>
-                        <p class="font-Geist font-normal text-[16px] text-links">I maintain numerous developer packages and contribute to main-branch open source libraries. Keeping tools accessible makes the industry better for everyone..</p>
-                    </div>
-                    <div class="flex flex-row gap-[30px]">
-                        <div class="flex flex-col">
-                            <span class="font-Geist-Mono font-bold text-title1 text-[24px]">420+</span>
-                            <span class="text-[13px] font-Geist font-normal text-commitsText">Commits this year</span>
+                    <div class="flex flex-col w-full h-auto gap-[15px] font-Geist font-medium text-[14px] text-name overflow-x-auto md:overflow-x-hidden">
+                        <div class="flex flex-row w-full h-[64px] gap-[15px]">
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/file-code.png" alt="file code">
+                                <span>React</span>
+                            </div>
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/panel-bottom.png">
+                                <span>Next.js</span>
+                            </div>
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/curly-braces.png">
+                                <span>Node.js</span>
+                            </div>
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/code.png"">
+                                <span>Express</span>
+                            </div>
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/circle-x.png">
+                                <span>TypeScript</span>
+                            </div>
+                            
+                            
                         </div>
-                         <div class="flex flex-col">
-                            <span class="font-Geist-Mono font-bold text-fonction text-[24px]">1.2k</span>
-                            <span class="text-[13px] font-Geist font-normal text-commitsText">Stars on GitHub</span>
+
+                        <div class="flex flex-row w-full h-[64px] gap-[15px]">
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/database.png" alt="file code">
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/database.png">
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/git-branch.png">
+                                <span>Docker</span>
+                            </div>
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/play-circle.png"">
+                                <span>AWS</span>
+                            </div>
+                            <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
+                                <img class="w-[18px] h-[18px]" src="./Assets/images/git-branch.png">
+                                <span>Git</span>
+                            </div>
+                            
+                            
                         </div>
-                       
                     </div>
                 </div>
-                <div class="w-full md:h-[250px] w-[480px] h-[210px] rounded-[12px] border-[1px] border-borderButton bg-[url(./Assets/images/Github-Heatmap.png)] bg-cover bg-center"></div>
-            </div>
-        </section>
 
-        <!-- section verified signal -->
-        <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
-            <div>
-                 <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 06 <span class="text-titleSection ">Verified Signals</span></h2>
-            </div>
-            <div class="flex flex-col w-full gap-[10px]">
+            </section>
+
+            <!-- section projects -->
+            <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]" >
                 <div>
-                     <p class=" font-Geist font-bold text-[28px] text-button">Peer Valuations</p>
+                    <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 03 <span class="text-titleSection ">Production Artifacts</span></h2>
                 </div>
+                <div class=" w-full h-auto flex flex-col font-Geist gap-[35px] ">
+                    <div>
+                        <p class=" font-Geist font-bold text-[28px] text-button">Selected Deployments</p>
+                    </div>
+                    <div>
+                        <p class="font-Geist font-normal text-[16px] text-links">Crafted for latency, architectural soundness, and clean layout patterns.</p>
+                    </div>
+                    <div class="flex flex-col w-full h-auto overflow-x-auto md:overflow-x-hidden">
+                        <div class="flex flex-row w-full h-[220px] gap-[30px]">
+                            <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project1.png"></div>
+                            <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project2.png"></div> 
+                            <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project3.png"></div>  
+                        </div>
+                        <div class="flex flex-row w-full h-[194px] gap-[30px]">
+                            <div class="flex flex-col w-[410px] h-[194px] p-[18px] gap-[10px] flex-shrink-0 rounded-[6px] bg-navBar">
+                                <nav class="flex flex-row w-full gap-[10px]">
+                                    <button class="w-[53px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">React</button>
+                                    <button class="w-[86px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">TypeScript</button>
+                                    <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Node.js</button>
+                                    <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">MongoDB</button>
+                                </nav>
+                                <h2 class="font-bold font-Geist text-[20px] text-name">TaskFlow</h2>
+                                <p class="font-Geist text-[14px] text-links font-normal">Robust project management platform constructed on top of a highly responsive Kanban schema.</p>
+                                <div class="w-[120px] h-[16px] font-Geist font-semibold text-[12px] text-fonction bg-[url(./Assets/images/play-circle.png)] bg-no-repeat bg-[24px_24px] bg-[95px]">EXECUTE_VIEW</div>
+                            </div>
+
+                            <div class="flex flex-col w-[410px] h-[194px] p-[18px] gap-[10px] bg-navBar flex-shrink-0 rounded-[6px]">
+                                <nav class="flex flex-row w-full gap-[10px]">
+                                    <button class="w-[53px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Next.js</button>
+                                    <button class="w-[86px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Docker</button>
+                                    <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">PostgreSQL</button>
+                                    <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">AWS</button>
+                                </nav>
+                                <h2 class="font-bold font-Geist text-[20px] text-name">ShopNow</h2>
+                                <p class="font-Geist text-[14px] text-links font-normal">High-throughput e-commerce platform boasting millisecond latency and serverless microservices.</p>
+                                <div class="w-[120px] h-[16px] font-Geist font-semibold text-[12px] text-fonction bg-[url(./Assets/images/play-circle.png)] bg-no-repeat bg-[24px_24px] bg-[95px]">EXECUTE_VIEW</div>
+                            </div>
+
+                            <div class="flex flex-col w-[410px] h-[194px] p-[18px] gap-[10px] bg-navBar flex-shrink-0 rounded-[6px]">
+                                <nav class="flex flex-row w-full gap-[10px]">
+                                    <button class="w-[53px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">React</button>
+                                    <button class="w-[86px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Express</button>
+                                    <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">WebSocket</button>
+                                    <button class="w-[67px] h-[22px] rounded-[4px] bg-navButton font-Geist-Mono text-[11px] text-fonction">Redis</button>
+                                </nav>
+                                <h2 class="font-bold font-Geist text-[20px] text-name">DevChat</h2>
+                                <p class="font-Geist text-[14px] text-links font-normal">Instantaneous, end-to-end encrypted technical chat interface for team standups.</p>
+                                <div class="w-[120px] h-[16px] font-Geist font-semibold text-[12px] text-fonction bg-[url(./Assets/images/play-circle.png)] bg-no-repeat bg-[24px_24px] bg-[95px]">EXECUTE_VIEW</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- system logs-->
+            <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[10px] md:pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
                 <div>
-                    <p class="font-Geist font-normal text-[16px] text-links">Direct quotes and reports pulled from production partners.</p>
+                    <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 04 <span class="text-titleSection ">System Logs</span></h2>
                 </div>
-                <div class="flex flex-row w-full h-auto mt-[40px] gap-[30px] overflow-x-auto md:overflow-x-hidden">
-                    <div class="w-[410px] h-[244px] rounded-[12px] border-[1px] border-borderButton bg-navBar flex flex-col p-[30px] gap-[20px] flex-shrink-0">
-                        <img class="w-[24px] h-[24px]" src="./Assets/images/ellipsis-vertical.png" alt="menu">
-                        <p class="text-[15px] text-links font-Geist font-normal">"Alex joined our project during an architectural crisis. He rewrote the database schema, cleaned our state machines, and restored calm."</p>
-                        <div class="flex flex-col">
-                            <span class="font-semibold font-Geist text-[14px] text-name">Sarah Jenkins</span>
-                            <span class="font-Geist-Mono text-[11px] text-links font-normal">CTO, TechCorp</span>
+                <div class="flex flex-col w-full h-auto gap-[10px]">
+                    <div>
+                        <p class=" font-Geist font-bold text-[28px] text-button">Career Timeline</p>
+                    </div>
+                    <div>
+                        <p class="font-Geist font-normal text-[16px] text-links">A trajectory of technical depth, system operations, and growing product ownership.</p>
+                    </div>
+                </div> 
+                <div class="flex flex-col w-full">
+                    <!-- trois enfants -->
+                    <!-- enfant 1 -->
+                    <div class="flex flex-col w-full items-center">
+                        <div class="flex flex-row items-center w-full justify-between">
+                            <div class="flex flex-row items-center gap-[20px]">
+                                <img class="w-[17px] h-[17px]" src="./Assets/images/Frame.png" alt="cercle">
+                                <h2 class=" font-Geist font-bold text-[18px] text-button">Senior Developer <span class="pl-[5px] text-links text-[14px] font-Geist-Mono font-normal">@ TechCorp</span></h2>
+                            </div>    
+                            <span class=" flex font-Geist-Mono text-links text-[13px] font-normal ">2022 – Present</span>
+                        </div>
+                        <div class="flex flex-row items-center gap-[31px]">
+                            <img class="pl-[8px]" src="./Assets/images/Line.png">
+                            <p class="font-Geist text-[14px] text-links font-normal">Lead a high-performance cross-functional engineering squad. Spearheaded migration from legacy monolithic structures to a modern serverless microservice pipeline on AWS, improving system up-time to 99.99%.</p>
                         </div>
                     </div>
                     <!-- enfant 2 -->
-                    <div class="w-[410px] h-[244px] rounded-[12px] border-[1px] border-borderButton bg-navBar flex flex-col p-[30px] gap-[20px] flex-shrink-0">
-                        <img class="w-[24px] h-[24px]" src="./Assets/images/ellipsis-vertical.png" alt="menu">
-                        <p class="text-[15px] text-links font-Geist font-normal">"Absolute machine. He delivers code faster than anyone we've worked with, but never cuts corners. Highly recommended fullstack specialist.""</p>
-                        <div class="flex flex-col">
-                            <span class="font-semibold font-Geist text-[14px] text-name">Liam Zhao</span>
-                            <span class="font-Geist-Mono text-[11px] text-links font-normal">Founder, StartupLab</span>
+                    <div class="flex flex-col w-full items-center">
+                        <div class="flex flex-row items-center w-full justify-between">
+                            <div class="flex flex-row items-center gap-[20px]">
+                                <img class="w-[17px] h-[17px]" src="./Assets/images/Frame.png" alt="cercle">
+                                <h2 class=" font-Geist font-bold text-[18px] text-button">Fullstack Developer <span class="pl-[5px] text-links text-[14px] font-Geist-Mono font-normal">@ StartupLab</span></h2>
+                            </div>    
+                            <span class=" flex font-Geist-Mono text-links text-[13px] font-normal ">2020 – 2022</span>
+                        </div>
+                        <div class="flex flex-row items-center gap-[31px] md:pr-[160px]">
+                            <img class="pl-[8px]" src="./Assets/images/Line.png">
+                            <p class="font-Geist text-[14px] text-links font-normal">Designed, tested, and shipped primary features for our B2B SaaS platform using React, TypeScript, and Node.js. Optimized SQL queries to reduce core analytics latency by 42%.</p>
                         </div>
                     </div>
                     <!-- enfant 3 -->
-                    <div class="w-[410px] h-[244px] rounded-[12px] border-[1px] border-borderButton bg-navBar flex flex-col p-[30px] gap-[20px] flex-shrink-0">
-                        <img class="w-[24px] h-[24px]" src="./Assets/images/ellipsis-vertical.png" alt="menu">
-                        <p class="text-[15px] text-links font-Geist font-normal">"Excellent architectural choices, solid grasp of security models, and flawless communicator. It was a genuine pleasure."</p>
-                        <div class="flex flex-col">
-                            <span class="font-semibold font-Geist text-[14px] text-name">Elena Petrova</span>
-                            <span class="font-Geist-Mono text-[11px] text-links font-normal">Product VP, WebAgency</span>
+                    <div class="flex flex-col w-full items-center gap-[15px]">
+                        <div class="flex flex-row items-center w-full justify-between">
+                            <div class="flex flex-row items-center gap-[20px]">
+                                <img class="w-[17px] h-[17px]" src="./Assets/images/Frame.png" alt="cercle">
+                                <h2 class=" font-Geist font-bold text-[18px] text-button">Junior Developer <span class="pl-[5px] text-links text-[14px] font-Geist-Mono font-normal">@ WebAgency</span></h2>
+                            </div>    
+                            <span class=" flex font-Geist-Mono text-links text-[13px] font-normal ">2018 – 2020</span>
+                        </div>
+                        <div>
+                            <p class=" pl-[37px] font-Geist text-[14px] text-links font-normal md:pr-[218px]">Constructed standard responsive layouts, implemented micro-CMS layers, and integrated secure payment processing with Stripe for multiple e-commerce entities.</p>
                         </div>
                     </div>
-                    
+
 
                 </div>
-
-            </div>
-
-        </section>
-
-        <!-- section technical journal -->
-        <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
-            <div>
-                 <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 07 <span class="text-titleSection ">Technical Journal</span></h2>
-            </div>
-            <div class="flex flex-col w-full gap-[10px]" >
+                
+                
+            </section>
+            <!-- section community sync -->
+            <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px] ">
                 <div>
-                     <p class=" font-Geist font-bold text-[28px] text-button">Technical Writing</p>
+                    <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 05 <span class="text-titleSection ">Community Sync</span></h2>
                 </div>
-                <div>
-                    <p class="font-Geist font-normal text-[16px] text-links">Deep dives into framework design, latency tuning, and production horror stories.</p>
-                </div>
-                <div class="flex flex-row w-full h-auto mt-[40px] gap-[25px] overflow-x-auto md:overflow-x-hidden">
-                    <div class=" flex flex-col bg-navBar w-[416px] h-[159px] rounded-[8px] p-[30px] gap-[10px] border-[1px] border-borderButton flex-shrink-0">
-                        <div class="flex flex-row justify-between">
-                            <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">FEB 24, 2026</span>
-                            <span class=" font-Geist-Mono font-normal text-[12px] text-fonction">5 MIN READ</span>
-                            
-                        </div>
-                        <h2 class="font-Geist font-bold text-[18px] text-name">Mastering Node.js Stream Piping with High Throughput Data</h2>
-                        <div class="flex flex-row items-center gap-[8px]">
-                            <span class="font-Geistfont-normal text-links text-[13px]">Read Article</span>
-                            <img class="w-[13px] h-[13px]" src="./Assets/images/play-circle.png" alt=" play-circle">
-                        </div>
-                    </div>
-                    <!-- enfant numero 2 -->
-                    <div class=" flex flex-col bg-navBar w-[416px] h-[159px] rounded-[8px] p-[30px] gap-[10px] border-[1px] border-borderButton flex-shrink-0">
-                        <div class="flex flex-row justify-between">
-                            <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">JAN 12, 2026</span>
-                            <span class=" font-Geist-Mono font-normal text-[12px] text-fonction">8 MIN READ</span>
-                            
-                        </div>
-                        <h2 class="font-Geist font-bold text-[18px] text-name">Optimizing Microfrontends in React 19: Core Architectural Lessons</h2>
-                        <div class="flex flex-row items-center gap-[8px]">
-                            <span class="font-Geistfont-normal text-links text-[13px]">Read Article</span>
-                            <img class="w-[13px] h-[13px]" src="./Assets/images/play-circle.png" alt=" play-circle">
-                        </div>
-                    </div>
+                <div class="md:flex-row md:gap[40px] flex flex-col gap-[30px]">
 
-                    <!-- enfant numero 3 -->
-                    <div class=" flex flex-col bg-navBar w-[416px] h-[159px] rounded-[8px] p-[30px] gap-[10px] border-[1px] border-borderButton flex-shrink-0">
-                        <div class="flex flex-row justify-between">
-                            <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">DEC 04, 2025</span>
-                            <span class=" font-Geist-Mono font-normal text-[12px] text-fonction">6 MIN READ</span>
-                            
+                    <div class="flex flex-col gap-[20px]">
+                        <div>
+                            <p class=" font-Geist font-bold text-[28px] text-button">Sharing with the Void</p>
                         </div>
-                        <h2 class="font-Geist font-bold text-[18px] text-name">Securing Express APIs Against Malicious Query Injections</h2>
-                        <div class="flex flex-row items-center gap-[8px]">
-                            <span class="font-Geistfont-normal text-links text-[13px]">Read Article</span>
-                            <img class="w-[13px] h-[13px]" src="./Assets/images/play-circle.png" alt=" play-circle">
+                        <div>
+                            <p class="font-Geist font-normal text-[16px] text-links">I maintain numerous developer packages and contribute to main-branch open source libraries. Keeping tools accessible makes the industry better for everyone..</p>
                         </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- section initiatize connexion -->
-
-        <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
-             <div>
-                 <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 08 <span class="text-titleSection ">Initialize Connection</span></h2>
-            </div>
-            <div class="flex flex-col gap-[30px] md:flex-row">
-                <!-- deux enfants principaux -->
-                 <!-- enfant 1 -->
-                <div class="flex flex-col gap-[30px]">
-                    <div>
-                        <p class=" font-Geist font-bold text-[28px] text-button">Let's build something secure.</p>
-                    </div>
-                     <div>
-                        <p class="font-Geist font-normal text-[16px] text-links">Have a project in mind, need technical assistance, or looking to scale your engineering team? Shoot me a message or connect through social channels.</p>
-                    </div>
-                    <div class="flex flex-col w-full gap-[30px]">
-                        <!-- enfant numero 1 -->
-                        <div class=" p-[20px] gap-[20px] items-center flex flex-row w-full h-[69px] rounded-[8px] border-[1px] border-borderButton bg-navBar">
-                            <img class="w-[20px] h-[20px]" src="./Assets/images/git-branch.png">
+                        <div class="flex flex-row gap-[30px]">
                             <div class="flex flex-col">
-                                <span class="font-Geist font-normal text-[13px] text-commitsText">GitHub</span>
-                                <a class="font-Geist-Mono font-normal text-[14px] text-name" href="https:github.com">github.com/alex_durand</a>
+                                <span class="font-Geist-Mono font-bold text-title1 text-[24px]">420+</span>
+                                <span class="text-[13px] font-Geist font-normal text-commitsText">Commits this year</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="font-Geist-Mono font-bold text-fonction text-[24px]">1.2k</span>
+                                <span class="text-[13px] font-Geist font-normal text-commitsText">Stars on GitHub</span>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="w-full md:h-[250px] w-[480px] h-[210px] rounded-[12px] border-[1px] border-borderButton bg-[url(./Assets/images/Github-Heatmap.png)] bg-cover bg-center"></div>
+                </div>
+            </section>
+
+            <!-- section verified signal -->
+            <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
+                <div>
+                    <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 06 <span class="text-titleSection ">Verified Signals</span></h2>
+                </div>
+                <div class="flex flex-col w-full gap-[10px]">
+                    <div>
+                        <p class=" font-Geist font-bold text-[28px] text-button">Peer Valuations</p>
+                    </div>
+                    <div>
+                        <p class="font-Geist font-normal text-[16px] text-links">Direct quotes and reports pulled from production partners.</p>
+                    </div>
+                    <div class="flex flex-row w-full h-auto mt-[40px] gap-[30px] overflow-x-auto md:overflow-x-hidden">
+                        <div class="w-[410px] h-[244px] rounded-[12px] border-[1px] border-borderButton bg-navBar flex flex-col p-[30px] gap-[20px] flex-shrink-0">
+                            <img class="w-[24px] h-[24px]" src="./Assets/images/ellipsis-vertical.png" alt="menu">
+                            <p class="text-[15px] text-links font-Geist font-normal">"Alex joined our project during an architectural crisis. He rewrote the database schema, cleaned our state machines, and restored calm."</p>
+                            <div class="flex flex-col">
+                                <span class="font-semibold font-Geist text-[14px] text-name">Sarah Jenkins</span>
+                                <span class="font-Geist-Mono text-[11px] text-links font-normal">CTO, TechCorp</span>
+                            </div>
+                        </div>
+                        <!-- enfant 2 -->
+                        <div class="w-[410px] h-[244px] rounded-[12px] border-[1px] border-borderButton bg-navBar flex flex-col p-[30px] gap-[20px] flex-shrink-0">
+                            <img class="w-[24px] h-[24px]" src="./Assets/images/ellipsis-vertical.png" alt="menu">
+                            <p class="text-[15px] text-links font-Geist font-normal">"Absolute machine. He delivers code faster than anyone we've worked with, but never cuts corners. Highly recommended fullstack specialist.""</p>
+                            <div class="flex flex-col">
+                                <span class="font-semibold font-Geist text-[14px] text-name">Liam Zhao</span>
+                                <span class="font-Geist-Mono text-[11px] text-links font-normal">Founder, StartupLab</span>
+                            </div>
+                        </div>
+                        <!-- enfant 3 -->
+                        <div class="w-[410px] h-[244px] rounded-[12px] border-[1px] border-borderButton bg-navBar flex flex-col p-[30px] gap-[20px] flex-shrink-0">
+                            <img class="w-[24px] h-[24px]" src="./Assets/images/ellipsis-vertical.png" alt="menu">
+                            <p class="text-[15px] text-links font-Geist font-normal">"Excellent architectural choices, solid grasp of security models, and flawless communicator. It was a genuine pleasure."</p>
+                            <div class="flex flex-col">
+                                <span class="font-semibold font-Geist text-[14px] text-name">Elena Petrova</span>
+                                <span class="font-Geist-Mono text-[11px] text-links font-normal">Product VP, WebAgency</span>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- section technical journal -->
+            <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
+                <div>
+                    <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 07 <span class="text-titleSection ">Technical Journal</span></h2>
+                </div>
+                <div class="flex flex-col w-full gap-[10px]" >
+                    <div>
+                        <p class=" font-Geist font-bold text-[28px] text-button">Technical Writing</p>
+                    </div>
+                    <div>
+                        <p class="font-Geist font-normal text-[16px] text-links">Deep dives into framework design, latency tuning, and production horror stories.</p>
+                    </div>
+                    <div class="flex flex-row w-full h-auto mt-[40px] gap-[25px] overflow-x-auto md:overflow-x-hidden">
+                        <div class=" flex flex-col bg-navBar w-[416px] h-[159px] rounded-[8px] p-[30px] gap-[10px] border-[1px] border-borderButton flex-shrink-0">
+                            <div class="flex flex-row justify-between">
+                                <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">FEB 24, 2026</span>
+                                <span class=" font-Geist-Mono font-normal text-[12px] text-fonction">5 MIN READ</span>
+                                
+                            </div>
+                            <h2 class="font-Geist font-bold text-[18px] text-name">Mastering Node.js Stream Piping with High Throughput Data</h2>
+                            <div class="flex flex-row items-center gap-[8px]">
+                                <span class="font-Geistfont-normal text-links text-[13px]">Read Article</span>
+                                <img class="w-[13px] h-[13px]" src="./Assets/images/play-circle.png" alt=" play-circle">
                             </div>
                         </div>
                         <!-- enfant numero 2 -->
-                        <div class=" p-[20px] gap-[20px] items-center flex flex-row w-full h-[69px] rounded-[8px] border-[1px] border-borderButton bg-navBar">
-                            <img class="w-[20px] h-[20px]" src="./Assets/images/user-circle.png">
-                            <div class="flex flex-col">
-                                <span class="font-Geist font-normal text-[13px] text-commitsText">LinkedIn</span>
-                                <a class="font-Geist-Mono font-normal text-[14px] text-name" href="https:linkedin.com">linkedin.com/in/alex-durand</a>
+                        <div class=" flex flex-col bg-navBar w-[416px] h-[159px] rounded-[8px] p-[30px] gap-[10px] border-[1px] border-borderButton flex-shrink-0">
+                            <div class="flex flex-row justify-between">
+                                <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">JAN 12, 2026</span>
+                                <span class=" font-Geist-Mono font-normal text-[12px] text-fonction">8 MIN READ</span>
+                                
+                            </div>
+                            <h2 class="font-Geist font-bold text-[18px] text-name">Optimizing Microfrontends in React 19: Core Architectural Lessons</h2>
+                            <div class="flex flex-row items-center gap-[8px]">
+                                <span class="font-Geistfont-normal text-links text-[13px]">Read Article</span>
+                                <img class="w-[13px] h-[13px]" src="./Assets/images/play-circle.png" alt=" play-circle">
                             </div>
                         </div>
+
                         <!-- enfant numero 3 -->
-                        <div class=" p-[20px] gap-[20px] items-center flex flex-row w-full h-[69px] rounded-[8px] border-[1px] border-borderButton bg-navBar">
-                            <img class="w-[20px] h-[20px]" src="./Assets/images/file-search.png">
-                            <div class="flex flex-col">
-                                <span class="font-Geist font-normal text-[13px] text-commitsText">Twitter</span>
-                                <a class="font-Geist-Mono font-normal text-[14px] text-name" href="https:twitter.com">twitter.com/alex_durand</a>
+                        <div class=" flex flex-col bg-navBar w-[416px] h-[159px] rounded-[8px] p-[30px] gap-[10px] border-[1px] border-borderButton flex-shrink-0">
+                            <div class="flex flex-row justify-between">
+                                <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">DEC 04, 2025</span>
+                                <span class=" font-Geist-Mono font-normal text-[12px] text-fonction">6 MIN READ</span>
+                                
+                            </div>
+                            <h2 class="font-Geist font-bold text-[18px] text-name">Securing Express APIs Against Malicious Query Injections</h2>
+                            <div class="flex flex-row items-center gap-[8px]">
+                                <span class="font-Geistfont-normal text-links text-[13px]">Read Article</span>
+                                <img class="w-[13px] h-[13px]" src="./Assets/images/play-circle.png" alt=" play-circle">
                             </div>
                         </div>
 
                     </div>
-                    
-                </div>
 
-                 <!-- enfant 2 -->
-                 <div class="flex flex-col w-full h-[475px] border-[1px] border-borderButton bg-navBar rounded-[12px]">
-                    <div class="flex flex-row w-full h-[60px] justify-between border-[1px] border-borderButton items-center px-[10px]">
-                        <img class="w-[40px] h-[10px]" src="./Assets/images/window-controls.png" alt="windows-controls">
-                        <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">POST /api/contact</span>
-                        <img class="w-[40px] h-[10px]" src="./Assets/images/right-spacer.png" alt="right-spacer">
+                </div>
+            </section>
+            <!-- section initiatize connexion -->
+
+            <section class="w-full h-auto flex flex-col py-[70px] pl-[50px] pr-[15px] gap-[45px] border-[1px] border-borderButton md:pl-[30px]">
+                <div>
+                    <h2 class="font-Geist-Mono uppercase text-[13px] font-normal text-fonction">// 08 <span class="text-titleSection ">Initialize Connection</span></h2>
+                </div>
+                <div class="flex flex-col gap-[30px] md:flex-row">
+                    <!-- deux enfants principaux -->
+                    <!-- enfant 1 -->
+                    <div class="flex flex-col gap-[30px]">
+                        <div>
+                            <p class=" font-Geist font-bold text-[28px] text-button">Let's build something secure.</p>
+                        </div>
+                        <div>
+                            <p class="font-Geist font-normal text-[16px] text-links">Have a project in mind, need technical assistance, or looking to scale your engineering team? Shoot me a message or connect through social channels.</p>
+                        </div>
+                        <div class="flex flex-col w-full gap-[30px]">
+                            <!-- enfant numero 1 -->
+                            <div class=" p-[20px] gap-[20px] items-center flex flex-row w-full h-[69px] rounded-[8px] border-[1px] border-borderButton bg-navBar">
+                                <img class="w-[20px] h-[20px]" src="./Assets/images/git-branch.png">
+                                <div class="flex flex-col">
+                                    <span class="font-Geist font-normal text-[13px] text-commitsText">GitHub</span>
+                                    <a class="font-Geist-Mono font-normal text-[14px] text-name" href="https:github.com">github.com/alex_durand</a>
+                                </div>
+                            </div>
+                            <!-- enfant numero 2 -->
+                            <div class=" p-[20px] gap-[20px] items-center flex flex-row w-full h-[69px] rounded-[8px] border-[1px] border-borderButton bg-navBar">
+                                <img class="w-[20px] h-[20px]" src="./Assets/images/user-circle.png">
+                                <div class="flex flex-col">
+                                    <span class="font-Geist font-normal text-[13px] text-commitsText">LinkedIn</span>
+                                    <a class="font-Geist-Mono font-normal text-[14px] text-name" href="https:linkedin.com">linkedin.com/in/alex-durand</a>
+                                </div>
+                            </div>
+                            <!-- enfant numero 3 -->
+                            <div class=" p-[20px] gap-[20px] items-center flex flex-row w-full h-[69px] rounded-[8px] border-[1px] border-borderButton bg-navBar">
+                                <img class="w-[20px] h-[20px]" src="./Assets/images/file-search.png">
+                                <div class="flex flex-col">
+                                    <span class="font-Geist font-normal text-[13px] text-commitsText">Twitter</span>
+                                    <a class="font-Geist-Mono font-normal text-[14px] text-name" href="https:twitter.com">twitter.com/alex_durand</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- enfant 2 -->
+                    <div class="flex flex-col w-full h-[475px] border-[1px] border-borderButton bg-navBar rounded-[12px]">
+                        <div class="flex flex-row w-full h-[60px] justify-between border-[1px] border-borderButton items-center px-[10px]">
+                            <img class="w-[40px] h-[10px]" md:w-[50px] md:[20px] src="./Assets/images/window-controls.png" alt="windows-controls">
+                            <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">POST /api/contact</span>
+                            <img class="w-[40px] h-[10px]" src="./Assets/images/right-spacer.png" alt="right-spacer">
+
+                        </div>
+                        <form class="flex flex-col w-full h-auto p-[20px] gap-[25px]">
+                            <div class="flex flex-col gap-[10px]">
+                                <label class="font-Geist-Mono font-normal text-[12px] text-commitsText" for="nom">"name"</label>
+                                <input class=" pl-[15px] w-full h-[45px] border-[1px] border-borderButton rounded-[6px] bg-navBar text-[14px] text-links font-Geist font-normal" type="text" id="nom" name="nom" placeholder="Alex Durand">
+                            </div>
+                            <div class="flex flex-col gap-[10px]">
+                                <label class="font-Geist-Mono font-normal text-[12px] text-commitsText"  for="email">"email"</label>
+                                <input class=" pl-[15px] w-full h-[45px] border-[1px] border-borderButton rounded-[6px] bg-navBar text-[14px] text-links font-Geist font-normal" type="email" id="email" name="email" placeholder="alex@durand.dev">
+                            </div>
+                            <div class="flex flex-col gap-[10px]">
+                                <label class="font-Geist-Mono font-normal text-[12px] text-commitsText"  for="message">"message"</label>
+                                <textarea class=" pl-[15px] pt-[15px] w-full h-[100px] bg-navBar border-[1px] border-borderButton rounded-[6px] text-[14px] text-links font-Geist font-normal" name="message" id="message" placeholder="Hi Alex, let's discuss a modern fullstack setup..."></textarea>
+                            </div>
+                            <div class="flex flex-row justify-between items-center">
+                                <span class="font-Geist font-normal text-[11px] text-title1 ">Status: READY_TO_SEND</span>
+                                <input class="w-[165px] h-[42px] rounded-[6px] bg-fonction font-Geist font-semibold text-[14px] text-body bg-[url(./Assets/images/play-circle-col.png)] bg-no-repeat bg-[24px_24px] bg-[135px_center]" type="submit" value="Send Request">
+                            </div>
+                        </form>
 
                     </div>
-                    <form class="flex flex-col w-full h-auto p-[20px] gap-[25px]">
-                        <div class="flex flex-col gap-[10px]">
-                            <label class="font-Geist-Mono font-normal text-[12px] text-commitsText" for="nom">"name"</label>
-                            <input class=" pl-[15px] w-full h-[45px] border-[1px] border-borderButton rounded-[6px] bg-navBar text-[14px] text-links font-Geist font-normal" type="text" id="nom" name="nom" placeholder="Alex Durand">
-                        </div>
-                        <div class="flex flex-col gap-[10px]">
-                            <label class="font-Geist-Mono font-normal text-[12px] text-commitsText"  for="email">"email"</label>
-                            <input class=" pl-[15px] w-full h-[45px] border-[1px] border-borderButton rounded-[6px] bg-navBar text-[14px] text-links font-Geist font-normal" type="email" id="email" name="email" placeholder="alex@durand.dev">
-                        </div>
-                        <div class="flex flex-col gap-[10px]">
-                            <label class="font-Geist-Mono font-normal text-[12px] text-commitsText"  for="message">"message"</label>
-                            <textarea class=" pl-[15px] w-full h-[100px] bg-navBar border-[1px] border-borderButton rounded-[6px] text-[14px] text-links font-Geist font-normal" name="message" id="message" placeholder="Hi Alex, let's discuss a modern fullstack setup..."></textarea>
-                        </div>
-                        <div class="flex flex-row justify-between items-center">
-                            <span class="font-Geist font-normal text-[11px] text-title1 ">Status: READY_TO_SEND</span>
-                            <input class="w-[165px] h-[42px] rounded-[6px] bg-fonction font-Geist font-semibold text-[14px] text-body bg-[url(./Assets/images/play-circle-col.png)] bg-no-repeat bg-[24px_24px] bg-[135px_center]" type="submit" value="Send Request">
-                        </div>
-                    </form>
 
                 </div>
-
+            </section>
+        </main>
+        <footer class="px-[50px] w-full h-[80px] flex flex-col md:flex-row border-[1px] border-borderButton bg-navBar justify-center items-center gap-[10px] md:justify-between">
+            <p class="font-Geist-Mono text-[12px] font-normal text-links">© 2026 Alex Durand. Compiled successfully.</p>
+            <div class="flex flex-row items-center gap-[5px] ">
+                <img class="w-[6px] h-[6px]" src="./Assets/images/pulse-dot.png">
+                <span class="font-Geist-Mono text-[12px] font-normal text-title1">All Services Operational</span>
             </div>
-        </section>
-
-    </main>
-</body>
+        </footer>
+    </body>
 </html>
