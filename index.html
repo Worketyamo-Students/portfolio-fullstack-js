@@ -64,7 +64,7 @@
                         <button class="font-semibold font-semibold text-[14px] w-[163px] h-[42px] rounded-[6px] text-button border-[1px] border-borderButton">Contact Me</button>
                     </div>
                 </div>
-                <div class="w-full h-[400px] rounded-[12px] border-[1px] border-borderButton bg-navBar">
+                <div class="w-full h-auto rounded-[12px] border-[1px] border-borderButton bg-navBar">
                     <div class="border-[1px] border-borderButton flex flex-row justify-between bg-navButton items-center p-[10px]">
                         <img class="w-[42px] h-[10px]" src="./Assets/images/window-controls.png" alt="window-controls">
                         <span class="font-Geist-Mono text-[12px] font-normal text-commitsText">editor.tsx</span>
@@ -114,9 +114,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-[35px]">
+                    <div class="flex flex-col gap-[35px] w-full">
                         <div><img class="rounded-[12px]" src="./Assets/images/ordinateur.png"></div>
-                        <div class="w-full h-[270px] border-[1px] rounded-[8px] border-borderButton bg-navBar">
+                        <div class="w-full h-auto border-[1px] rounded-[8px] border-borderButton bg-navBar">
                             <div class=" border-[1px] border-borderButton flex flex flex-row w-full justify-between items-center p-[10px] bg-navButton ">
                                 <img class="w-[42px] h-[10px]" src="./Assets/images/window-controls.png" alt="window-controls">
                                 <span class="font-Geist-Mono text-[12px] font-normal text-commitsText">about_me.json</span>
@@ -149,7 +149,7 @@
                     <div>
                         <p class="font-Geist font-normal text-[16px] text-links" >Modern backend protocols, scalable databases, and state-of-the-art frontend patterns.</p>
                     </div>
-                    <div class="flex flex-col w-full h-auto gap-[15px] font-Geist font-medium text-[14px] text-name overflow-x-auto md:overflow-x-hidden">
+                    <div class="flex flex-col w-full h-auto gap-[15px] font-Geist font-medium text-[14px] text-name overflow-x-auto">
                         <div class="flex flex-row w-full h-[64px] gap-[15px]">
                             <div class="rounded-[8px] flex flex-row w-[230px] h-[64px] border-[1px] border-borderButton gap-[20px] pl-[20px] items-center  flex-shrink-0 ">
                                 <img class="w-[18px] h-[18px]" src="./Assets/images/file-code.png" alt="file code">
@@ -216,7 +216,7 @@
                     <div>
                         <p class="font-Geist font-normal text-[16px] text-links">Crafted for latency, architectural soundness, and clean layout patterns.</p>
                     </div>
-                    <div class="flex flex-col w-full h-auto overflow-x-auto md:overflow-x-hidden">
+                    <div class="flex flex-col w-full h-auto overflow-x-auto">
                         <div class="flex flex-row w-full h-[220px] gap-[30px]">
                             <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project1.png"></div>
                             <div class="flex  flex-shrink-0"><img class="w-[410px] h-[220px]" src="./Assets/images/project2.png"></div> 
@@ -353,7 +353,17 @@
                         
                         </div>
                     </div>
-                    <div class="w-full md:h-[250px] w-[480px] h-[210px] rounded-[12px] border-[1px] border-borderButton bg-[url(./Assets/images/Github-Heatmap.png)] bg-cover bg-center"></div>
+                    <div class="w-full h-auto rounded-[12px] border-[1px] border-borderButton bg-navBar p-[15px] ">
+                        <div class="w-full flex flex-row justify-between font-Geist-Mono font-normal text-[12px]">
+                            <span class="text-links">@alex_durand / activity</span>
+                            <span class="text-title1">Active</span>
+                        </div>
+                        <!-- bloc de grille colorer -->
+                        <div class="w-full h-[100px] flex flex-row">
+                            <div></div>
+
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -369,7 +379,7 @@
                     <div>
                         <p class="font-Geist font-normal text-[16px] text-links">Direct quotes and reports pulled from production partners.</p>
                     </div>
-                    <div class="flex flex-row w-full h-auto mt-[40px] gap-[30px] overflow-x-auto md:overflow-x-hidden">
+                    <div class="flex flex-row w-full h-auto mt-[40px] gap-[30px] overflow-x-auto">
                         <div class="w-[410px] h-[244px] rounded-[12px] border-[1px] border-borderButton bg-navBar flex flex-col p-[30px] gap-[20px] flex-shrink-0">
                             <img class="w-[24px] h-[24px]" src="./Assets/images/ellipsis-vertical.png" alt="menu">
                             <p class="text-[15px] text-links font-Geist font-normal">"Alex joined our project during an architectural crisis. He rewrote the database schema, cleaned our state machines, and restored calm."</p>
@@ -416,7 +426,7 @@
                     <div>
                         <p class="font-Geist font-normal text-[16px] text-links">Deep dives into framework design, latency tuning, and production horror stories.</p>
                     </div>
-                    <div class="flex flex-row w-full h-auto mt-[40px] gap-[25px] overflow-x-auto md:overflow-x-hidden">
+                    <div class="flex flex-row w-full h-auto mt-[40px] gap-[25px] overflow-x-auto">
                         <div class=" flex flex-col bg-navBar w-[416px] h-[159px] rounded-[8px] p-[30px] gap-[10px] border-[1px] border-borderButton flex-shrink-0">
                             <div class="flex flex-row justify-between">
                                 <span class="font-Geist-Mono font-normal text-[12px] text-commitsText">FEB 24, 2026</span>
